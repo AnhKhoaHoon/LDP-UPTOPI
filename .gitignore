@@ -1,3 +1,3 @@
-backend/secrets.php
+backend/config.php
 .env
 .DS_Store

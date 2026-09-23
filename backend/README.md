@@ -10,17 +10,15 @@ Mở `config.php`:
   `telegram_enabled` thành `true` và điền chat ID.
 - Có thể bật một hoặc đồng thời cả hai kênh. Không được tắt cả hai.
 
-Key thật (Resend API key, Telegram bot token) không nằm trong `config.php`. Sao chép
-`secrets.example.php` thành `secrets.php` rồi điền key. `secrets.php` đã nằm trong
-`.gitignore` nên không bị đẩy lên GitHub; khi deploy phải tạo file này trực tiếp trên
-server. Biến môi trường `RESEND_SMTP_PASSWORD` và `TELEGRAM_BOT_TOKEN` nếu có sẽ được ưu
-tiên hơn `secrets.php`.
+`config.php` chứa key thật (Resend API key, Telegram bot token) nên đã nằm trong
+`.gitignore` và không có trên GitHub. Khi deploy, tải `config.php` trực tiếp lên thư mục
+`backend/` trên server (qua File Manager của aaPanel).
 
-File `.htaccess` chặn truy cập trực tiếp các file cấu hình khi dùng Apache/OpenLiteSpeed.
+File `.htaccess` chặn truy cập trực tiếp `config.php` khi dùng Apache/OpenLiteSpeed.
 Nếu website dùng Nginx, thêm vào cấu hình website rồi reload Nginx:
 
 ```nginx
-location ~ ^/backend/(config|secrets|secrets\.example)\.php$ {
+location = /backend/config.php {
     deny all;
 }
 ```
@@ -38,7 +36,7 @@ location ~ ^/backend/(config|secrets|secrets\.example)\.php$ {
 Xác minh domain gửi trong Resend và cấu hình các DNS record SPF/DKIM mà Resend cung
 cấp. `mail_from` phải thuộc domain đã xác minh.
 
-Chạy local sau khi đã tạo `secrets.php`:
+Chạy local:
 
 ```bash
 php -S 127.0.0.1:8080
