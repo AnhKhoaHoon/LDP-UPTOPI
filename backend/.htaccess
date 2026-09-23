@@ -1,0 +1,3 @@
+<FilesMatch "^(config|secrets|secrets\.example)\.php$">
+    Require all denied
+</FilesMatch>

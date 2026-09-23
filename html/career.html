@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>Tuyển dụng UpToPi - Nền tảng Ôn thi Y khoa Quốc gia 2027</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                scroll-behavior: smooth;
+                font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 9999px;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0f766e",
+                        "primary-container": "#0f766e",
+                        "on-primary": "#ffffff",
+                        "primary-hover": "#0d5f59",
+                        "primary-light": "#f0fdfa",
+                        "surface": "#f8fafc",
+                        "surface-card": "#ffffff",
+                        "surface-dim": "#f1f5f9",
+                        "on-surface": "#0f172a",
+                        "on-surface-variant": "#475569",
+                        "outline-subtle": "#e2e8f0"
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace']
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body class="bg-surface text-on-surface antialiased selection:bg-teal-700 selection:text-white">
+    <!-- HEADER NAVIGATION -->
+    <header
+        class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-outline-subtle/80 transition-all shadow-[0_1px_4px_rgba(15,23,42,0.03)]">
+        <div class="h-20 max-w-[1360px] mx-auto px-6 flex items-center justify-between gap-4">
+            <a class="flex items-center gap-2" href="#">
+                <img alt="UpToPi Medical EdTech Logo" class="h-9 w-auto object-contain"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1VUImOGQnI09qz8EODf0emdT_ToqFwWMKDZBNUFzQRuFsaFEwTRBafrji4Dv3fBsb5C1R2WRhiVZi9DlBalapTFvlLco52JEF5k1ngEe8FmJeaginarN9WdLTrF3DrNzmf1O9f7d330uOfSnp1dQBCzrIduIkNGVr6z8MY-BlDK2_zDmpL1Em7dHJhTuDbWkJ7IhxFQfVurqh6nXaIyGtiT7h3dn55fyn7rIZ4a6bNAniHijnO-nhg7-4BQ" />
+            </a>
+            <nav class="hidden lg:flex items-center gap-7">
+                <a class="text-sm font-semibold text-slate-600 hover:text-teal-700 transition-colors" href="#about">Bối
+                    cảnh 2027</a>
+                <a class="text-sm font-semibold text-slate-600 hover:text-teal-700 transition-colors"
+                    href="#culture">Văn hoá &amp; Lợi thế</a>
+                <a class="text-sm font-bold text-teal-700 hover:text-teal-800 transition-colors flex items-center gap-1.5"
+                    href="#positions">
+                    <span>Vị trí tuyển dụng</span>
+                    <span
+                        class="px-2 py-0.5 rounded-full text-xs bg-teal-50 text-teal-700 font-bold border border-teal-200">9</span>
+                </a>
+                <a class="text-sm font-semibold text-slate-600 hover:text-teal-700 transition-colors"
+                    href="#process">Quy trình</a>
+                <a class="text-sm font-semibold text-slate-600 hover:text-teal-700 transition-colors"
+                    href="#faq">FAQ</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-teal-700 hover:bg-teal-800 text-white text-sm font-bold shadow-sm hover:shadow transition-all gap-1.5"
+                    href="#apply-form">
+                    <span>Nộp hồ sơ</span>
+                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </a>
+                <a class="hidden sm:block" href="#founder">
+                    <img alt="Founder Bác sĩ UpToPi"
+                        class="w-9 h-9 rounded-full object-cover border-2 border-teal-600/30"
+                        src="https://lh3.googleusercontent.com/aida/AEtjO1XfwmiOezoekRznmBwhrkcRcjVpsufgrbZVte44uX46-_aI_zowAdrgQ0hmt-ZrhVJsp_CzFObrcwjJkd3DUNDP68JKYV2Ab9KaDEguqDQy5tLfDrlOMYVvOTbGPQPr0PYTjerbQXf1u148yx759nI_9aqb9o5TDq7uGdhkBND19p-nT4M17FnPsEYYXUBNQZLJ_85Qu0-CfLXavsh_LIhGcYf4b7Jfl8Qrp85K8VUlWprABMgUCKdGyG9s" />
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-20">
+        <!-- HERO SECTION (TINH GỌN, TRỌNG TÂM) -->
+        <section
+            class="relative w-full pt-16 pb-16 overflow-hidden bg-gradient-to-b from-teal-50/50 via-surface to-surface">
+            <div class="max-w-[1360px] mx-auto px-6 text-center">
+                <!-- Eyebrow Pill -->
+                <div
+                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50 border border-teal-200/80 text-teal-800 text-xs font-bold uppercase tracking-wider mb-6">
+                    <span class="w-2 h-2 rounded-full bg-teal-600 animate-ping"></span>
+                    <span>Tuyển dụng Đa phòng ban · Kỳ thi Y khoa 2027</span>
+                </div>
+                <!-- Headline & Subtitle -->
+                <h1
+                    class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl mx-auto leading-tight sm:leading-tight mb-4">
+                    Xây dựng nền tảng luyện thi Y khoa đầu tiên cho kỳ thi Quốc gia 2027
+                </h1>
+                <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
+                    Cùng đội ngũ Bác sĩ và Kỹ sư sáng lập định hình chuẩn mực khảo thí MedEdTech tại Việt Nam.
+                </p>
+                <!-- CTA Action Buttons -->
+                <div class="flex flex-wrap items-center justify-center gap-3.5 mb-12">
+                    <a class="px-6 py-3 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-sm hover:shadow transition-all inline-flex items-center gap-2"
+                        href="#positions">
+                        <span>Xem ngay 9 vị trí tuyển dụng</span>
+                        <span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+                    </a>
+                    <a class="px-6 py-3 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-sm border border-slate-200 transition-all inline-flex items-center gap-2"
+                        href="#about">
+                        <span>Tìm hiểu sứ mệnh</span>
+                        <span class="material-symbols-outlined text-[18px]">school</span>
+                    </a>
+                </div>
+                <!-- Fast KPI Strip (Tối giản 4 ô) -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
+                    <div class="p-4 rounded-xl bg-white border border-slate-200/80 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
+                        <div class="text-2xl font-black text-teal-700">9 vị trí</div>
+                        <div class="text-xs text-slate-500 font-semibold mt-0.5">3 khối chuyên môn</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white border border-slate-200/80 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
+                        <div class="text-2xl font-black text-teal-700">2027</div>
+                        <div class="text-xs text-slate-500 font-semibold mt-0.5">Kỳ thi QG bắt buộc</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white border border-slate-200/80 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
+                        <div class="text-2xl font-black text-teal-700">128</div>
+                        <div class="text-xs text-slate-500 font-semibold mt-0.5">Chủ đề QĐ 22</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white border border-slate-200/80 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
+                        <div class="text-2xl font-black text-teal-700">AMBOSS</div>
+                        <div class="text-xs text-slate-500 font-semibold mt-0.5">Chuẩn ca lâm sàng</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- BỐI CẢNH 2027 (2 CÂU CỐT LÕI + MÔ PHỎNG SÚC TÍCH) -->
+        <section class="py-14 bg-white border-y border-outline-subtle" id="about">
+            <div class="max-w-[1360px] mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-6 space-y-4">
+                        <div
+                            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-teal-50 text-teal-800 text-xs font-bold uppercase tracking-wider">
+                            Bối cảnh Ngành Y khoa
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                            Bước ngoặt kỳ thi Đánh giá Năng lực Hành nghề 2027
+                        </h2>
+                        <p class="text-slate-600 text-base leading-relaxed">
+                            Theo <strong>Quyết định 22/QĐ-HĐYKQG</strong>, từ năm 2027 toàn bộ bác sĩ mới tốt nghiệp
+                            phải vượt qua kỳ thi quốc gia để nhận chứng chỉ hành nghề.
+                        </p>
+                        <p class="text-slate-600 text-base leading-relaxed">
+                            UpToPi chuẩn hoá ngân hàng đề dựa trên <strong>128 chủ đề cốt lõi</strong> và chuẩn tham
+                            chiếu <strong>AMBOSS quốc tế</strong>, phục vụ hơn 25.000 bác sĩ tương lai.
+                        </p>
+                        <div class="flex items-center gap-6 pt-2 text-sm font-semibold text-slate-700">
+                            <span class="inline-flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-teal-700 text-lg">check_circle</span> Chưa có
+                                đối thủ định hình</span>
+                            <span class="inline-flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-teal-700 text-lg">check_circle</span> Cơ hội
+                                dẫn dắt chuẩn mực</span>
+                        </div>
+                    </div>
+                    <!-- Simulation Card Súc tích -->
+                    <div class="lg:col-span-6">
+                        <div class="rounded-2xl bg-slate-900 text-slate-100 p-5 shadow-lg border border-slate-800">
+                            <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-xs">
+                                <span class="text-teal-400 font-mono font-semibold">● CASE VIGNETTE · CHUẨN ĐOÁN LÂM
+                                    SÀNG</span>
+                                <span class="bg-slate-800 px-2.5 py-0.5 rounded text-slate-300 font-mono text-[11px]">QĐ
+                                    22/QĐ-HĐYKQG</span>
+                            </div>
+                            <div class="py-3">
+                                <p class="text-xs text-slate-400 mb-1 font-mono">Chuyên khoa: Nội Tim Mạch · AMBOSS
+                                    Cross-Check Level 3</p>
+                                <p class="text-sm font-medium text-slate-200">Nam 54 tuổi, đau sau xương ức cấp tính
+                                    45p, ECG ghi nhận ST chênh lên 2mm ở V1-V4. Hướng xử trí ưu tiên hàng đầu?</p>
+                            </div>
+                            <div class="space-y-1.5 text-xs font-medium">
+                                <div
+                                    class="p-2.5 rounded-lg bg-teal-950/80 border border-teal-500/40 text-teal-200 flex items-center justify-between">
+                                    <span>A. Chỉ định chụp và can thiệp mạch vành qua da (PCI) thì đầu</span>
+                                    <span class="material-symbols-outlined text-teal-400 text-base">verified</span>
+                                </div>
+                                <div class="p-2.5 rounded-lg bg-slate-800/60 text-slate-400">
+                                    <span>B. Điều trị bảo tồn và theo dõi men tim sau 6 giờ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- VÌ SAO NÊN GIA NHẬP (4 THẺ - MỖI THẺ 1 TIÊU ĐỀ + 1 DÒNG GIẢI THÍCH) -->
+        <section class="py-14 bg-surface" id="culture">
+            <div class="max-w-[1360px] mx-auto px-6">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <div
+                        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-teal-50 text-teal-800 text-xs font-bold uppercase tracking-wider mb-2">
+                        Môi trường Startup
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                        Vì sao nên đồng hành cùng UpToPi?
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                    <div
+                        class="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:border-teal-300 transition-all">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center mb-3">
+                            <span class="material-symbols-outlined text-xl">architecture</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-1">Định hình từ con số 0</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed">Trực tiếp xây dựng chiến lược nội dung và sản
+                            phẩm từ những viên gạch đầu tiên.</p>
+                    </div>
+                    <div
+                        class="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:border-teal-300 transition-all">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center mb-3">
+                            <span class="material-symbols-outlined text-xl">bolt</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-1">Quyết định trong tuần</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed">Làm việc trực tiếp cùng Bác sĩ Sáng lập, thử
+                            nghiệm và tối ưu không qua tầng nấc.</p>
+                    </div>
+                    <div
+                        class="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:border-teal-300 transition-all">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center mb-3">
+                            <span class="material-symbols-outlined text-xl">visibility</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-1">Ghi nhận rõ ràng</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed">Mọi đóng góp của bạn hiển thị trực tiếp trên
+                            chất lượng từng ca bệnh và học viên.</p>
+                    </div>
+                    <div
+                        class="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:border-teal-300 transition-all">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center mb-3">
+                            <span class="material-symbols-outlined text-xl">flag</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base mb-1">Thị trường tiên phong</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed">Tiếp cận và đặt chuẩn mực dẫn đầu cho phân
+                            khúc MedEdTech tại Việt Nam.</p>
+                    </div>
+                </div>
+                <!-- LỜI NHẮN FOUNDER (2 CÂU SÚC TÍCH) -->
+                <div class="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm flex flex-col md:flex-row items-center gap-6"
+                    id="founder">
+                    <img alt="Bác sĩ Sáng lập UpToPi"
+                        class="w-20 h-20 rounded-2xl object-cover shrink-0 border-2 border-teal-600/30"
+                        src="https://lh3.googleusercontent.com/aida/AEtjO1XfwmiOezoekRznmBwhrkcRcjVpsufgrbZVte44uX46-_aI_zowAdrgQ0hmt-ZrhVJsp_CzFObrcwjJkd3DUNDP68JKYV2Ab9KaDEguqDQy5tLfDrlOMYVvOTbGPQPr0PYTjerbQXf1u148yx759nI_9aqb9o5TDq7uGdhkBND19p-nT4M17FnPsEYYXUBNQZLJ_85Qu0-CfLXavsh_LIhGcYf4b7Jfl8Qrp85K8VUlWprABMgUCKdGyG9s" />
+                    <div class="flex-1 text-center md:text-left">
+                        <div class="text-xs font-bold uppercase tracking-wider text-teal-700 mb-1">Nói thẳng từ Bác sĩ
+                            Sáng lập</div>
+                        <p class="text-sm font-semibold text-slate-800 italic leading-relaxed">
+                            "Startup giai đoạn đầu: tự chủ cao, ảnh hưởng lớn, cùng định hình sản phẩm từ con số 0. Nếu
+                            bạn thích môi trường ổn định quy củ thì chưa phù hợp; nếu bạn muốn tạo dấu ấn dẫn đầu, đây
+                            là lúc."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 1. BỐ CỤC DANH SÁCH VỊ TRÍ TUYỂN DỤNG THEO MẪU https://lh3.googleusercontent.com/aida-public/AB6AXuA7p6ISZ4G37l33CbzTV-aece7pBrsbWWySSZeHLyf59EnO_NFUT0mmLxx-2sbMCTsfC65CRU22jnIWGfHv1TxQ8VqlmHQ4ql4X1q9N9N2s1hEXzCFVvkyun6lCXD08dtcpaYPgcn4eKXPXk3YIhXAK1eCPcLEP9-7-OlOAbkEwoaoDMpp2nDAwE1UoJZBH4NX102fSQWSwoY4bRYzztjHHkVHK8iau_7_y6u2dVc1DenjpnBg0BlbtRyEBDKJYKtfZfBg (HORIZONTAL CARDS) -->
+        <section class="py-16 bg-slate-50/70 border-t border-slate-200" id="positions">
+            <div class="max-w-[1360px] mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <div
+                        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-teal-50 text-teal-800 text-xs font-bold uppercase tracking-wider mb-2">
+                        Cơ hội nghề nghiệp 2024–2025
+                    </div>
+                    <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">
+                        9 Vị trí Tuyển dụng đang mở
+                    </h2>
+                    <p class="text-sm text-slate-500 mt-2 font-normal">
+                        Chọn phòng ban để lọc nhanh cơ hội phù hợp với chuyên môn của bạn.
+                    </p>
+                </div>
+                <!-- TAB FILTER -->
+                <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
+                    <button
+                        class="category-tab active px-4 py-2 rounded-xl text-xs font-bold transition-all bg-teal-700 text-white shadow-sm"
+                        onclick="filterJobs('all', this)" type="button">
+                        Tất cả vị trí (9)
+                    </button>
+                    <button
+                        class="category-tab px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white text-slate-600 hover:bg-slate-100 hover:text-slate-900 border border-slate-200"
+                        onclick="filterJobs('medical', this)" type="button">
+                        Nội dung Y khoa (4)
+                    </button>
+                    <button
+                        class="category-tab px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white text-slate-600 hover:bg-slate-100 hover:text-slate-900 border border-slate-200"
+                        onclick="filterJobs('marketing', this)" type="button">
+                        Truyền thông &amp; MKT (2)
+                    </button>
+                    <button
+                        class="category-tab px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white text-slate-600 hover:bg-slate-100 hover:text-slate-900 border border-slate-200"
+                        onclick="filterJobs('sales', this)" type="button">
+                        Tư vấn &amp; CSKH (3)
+                    </button>
+                </div>
+                <!-- HORIZONTAL CARDS CONTAINER -->
+                <div class="space-y-4" id="job-list-wrapper">
+                    <!-- ITEM 1: Cố vấn Chuyên môn Y khoa -->
+                    <div class="job-item rounded-2xl bg-white border border-slate-200/90 p-6 md:p-7 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-md hover:border-teal-300 transition-all flex flex-col md:flex-row md:items-center justify-between gap-6"
+                        data-dept="medical">
+                        <div class="space-y-3 flex-1">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-teal-50 text-teal-800 border border-teal-200">Nội
+                                    dung Y khoa</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200 flex items-center gap-1">⭐
+                                    Ưu tiên tuyển</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 leading-snug">Cố vấn Chuyên môn Y khoa (Medical
+                                Board Advisor)</h3>
+                            <div class="flex flex-wrap items-center gap-y-2 gap-x-5 text-sm text-slate-600">
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">public</span> Toàn
+                                    quốc / Remote 100%</span>
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">schedule</span> Bán
+                                    thời gian / Theo ca</span>
+                                <span class="inline-flex items-center gap-1.5 font-bold text-teal-700"><span
+                                        class="material-symbols-outlined text-base text-teal-700">payments</span> Thỏa
+                                    thuận theo ca bệnh + ESOP</span>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Bác
+                                    sĩ nội trú / CKI</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">AMBOSS</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Quyết
+                                    định 22</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Thẩm
+                                    định ca lâm sàng</span>
+                            </div>
+                        </div>
+                        <div class="shrink-0">
+                            <button
+                                class="w-full md:w-auto px-6 py-3 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-sm transition-all inline-flex items-center justify-center gap-2"
+                                onclick="selectRole('advisor', 'Cố vấn Chuyên môn Y khoa (Medical Board Advisor)')"
+                                type="button">
+                                <span>Ứng tuyển ngay</span>
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- ITEM 2: Giảng viên Ca lâm sàng -->
+                    <div class="job-item rounded-2xl bg-white border border-slate-200/90 p-6 md:p-7 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-md hover:border-teal-300 transition-all flex flex-col md:flex-row md:items-center justify-between gap-6"
+                        data-dept="medical">
+                        <div class="space-y-3 flex-1">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-teal-50 text-teal-800 border border-teal-200">Nội
+                                    dung Y khoa</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-teal-100 text-teal-900">⭐ Vị
+                                    trí mới</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 leading-snug">Giảng viên / Bác sĩ Giảng dạy Ca
+                                Lâm sàng</h3>
+                            <div class="flex flex-wrap items-center gap-y-2 gap-x-5 text-sm text-slate-600">
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">location_on</span> Hà
+                                    Nội &amp; TP.HCM (Hybrid)</span>
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">schedule</span> Bán
+                                    thời gian linh hoạt</span>
+                                <span class="inline-flex items-center gap-1.5 font-bold text-teal-700"><span
+                                        class="material-symbols-outlined text-base text-teal-700">payments</span> Theo
+                                    giờ giảng dạy + Thưởng</span>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Bác
+                                    sĩ / Giảng viên Y</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Case
+                                    Vignette</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Livestream
+                                    giải đề</span>
+                            </div>
+                        </div>
+                        <div class="shrink-0">
+                            <button
+                                class="w-full md:w-auto px-6 py-3 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-sm transition-all inline-flex items-center justify-center gap-2"
+                                onclick="selectRole('lecturer', 'Giảng viên / Bác sĩ Giảng dạy Ca Lâm sàng')"
+                                type="button">
+                                <span>Ứng tuyển ngay</span>
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- ITEM 3: Biên tập viên Nội dung Y khoa -->
+                    <div class="job-item rounded-2xl bg-white border border-slate-200/90 p-6 md:p-7 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-md hover:border-teal-300 transition-all flex flex-col md:flex-row md:items-center justify-between gap-6"
+                        data-dept="medical">
+                        <div class="space-y-3 flex-1">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-teal-50 text-teal-800 border border-teal-200">Nội
+                                    dung Y khoa</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200 flex items-center gap-1">⭐
+                                    Ưu tiên tuyển</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 leading-snug">Biên tập viên Nội dung Y khoa
+                                &amp; Ngân hàng Câu hỏi</h3>
+                            <div class="flex flex-wrap items-center gap-y-2 gap-x-5 text-sm text-slate-600">
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">location_on</span> Hà
+                                    Nội / Hybrid linh hoạt</span>
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">schedule</span> Toàn
+                                    thời gian / Part-time</span>
+                                <span class="inline-flex items-center gap-1.5 font-bold text-teal-700"><span
+                                        class="material-symbols-outlined text-base text-teal-700">payments</span>
+                                    12.000.000 - 18.000.000 đ</span>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Bác
+                                    sĩ Y đa khoa</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Rationale
+                                    giải thích chi tiết</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">5000+
+                                    Câu hỏi</span>
+                            </div>
+                        </div>
+                        <div class="shrink-0">
+                            <button
+                                class="w-full md:w-auto px-6 py-3 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-sm transition-all inline-flex items-center justify-center gap-2"
+                                onclick="selectRole('editor', 'Biên tập viên Nội dung Y khoa &amp; Ngân hàng Câu hỏi')"
+                                type="button">
+                                <span>Ứng tuyển ngay</span>
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- ITEM 4: CTV Biên dịch Y khoa -->
+                    <div class="job-item rounded-2xl bg-white border border-slate-200/90 p-6 md:p-7 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-md hover:border-teal-300 transition-all flex flex-col md:flex-row md:items-center justify-between gap-6"
+                        data-dept="medical">
+                        <div class="space-y-3 flex-1">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-teal-50 text-teal-800 border border-teal-200">Nội
+                                    dung Y khoa</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 leading-snug">CTV Biên dịch &amp; Thuật ngữ Y
+                                khoa (AMBOSS/USMLE)</h3>
+                            <div class="flex flex-wrap items-center gap-y-2 gap-x-5 text-sm text-slate-600">
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">public</span> Toàn
+                                    quốc / Remote 100%</span>
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">schedule</span> Bán
+                                    thời gian linh hoạt</span>
+                                <span class="inline-flex items-center gap-1.5 font-bold text-teal-700"><span
+                                        class="material-symbols-outlined text-base text-teal-700">payments</span>
+                                    3.000.000 - 6.000.000 đ / dự án</span>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Tiếng
+                                    Anh Y khoa</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Thuật
+                                    ngữ song ngữ</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">AMBOSS
+                                    Translation</span>
+                            </div>
+                        </div>
+                        <div class="shrink-0">
+                            <button
+                                class="w-full md:w-auto px-6 py-3 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-sm transition-all inline-flex items-center justify-center gap-2"
+                                onclick="selectRole('translator', 'CTV Biên dịch &amp; Thuật ngữ Y khoa (AMBOSS/USMLE)')"
+                                type="button">
+                                <span>Ứng tuyển ngay</span>
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- ITEM 5: Chuyên viên Marketing & Tăng trưởng -->
+                    <div class="job-item rounded-2xl bg-white border border-slate-200/90 p-6 md:p-7 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-md hover:border-teal-300 transition-all flex flex-col md:flex-row md:items-center justify-between gap-6"
+                        data-dept="marketing">
+                        <div class="space-y-3 flex-1">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-800 border border-blue-200">Truyền
+                                    thông &amp; MKT</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-teal-100 text-teal-900">⭐ Vị
+                                    trí mới</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 leading-snug">Chuyên viên Marketing &amp; Tăng
+                                trưởng (Growth Ops)</h3>
+                            <div class="flex flex-wrap items-center gap-y-2 gap-x-5 text-sm text-slate-600">
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">location_on</span> Hà
+                                    Nội / Hybrid</span>
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">schedule</span> Toàn
+                                    thời gian</span>
+                                <span class="inline-flex items-center gap-1.5 font-bold text-teal-700"><span
+                                        class="material-symbols-outlined text-base text-teal-700">payments</span>
+                                    12.000.000 - 20.000.000 đ + Thưởng</span>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Tư
+                                    duy số liệu</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Landing
+                                    Page Funnel</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Meta
+                                    &amp; Google Ads</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">A/B
+                                    Testing</span>
+                            </div>
+                        </div>
+                        <div class="shrink-0">
+                            <button
+                                class="w-full md:w-auto px-6 py-3 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-sm transition-all inline-flex items-center justify-center gap-2"
+                                onclick="selectRole('growth', 'Chuyên viên Marketing &amp; Tăng trưởng (Growth Ops)')"
+                                type="button">
+                                <span>Ứng tuyển ngay</span>
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- ITEM 6: CTV Truyền thông & Cộng đồng Y khoa -->
+                    <div class="job-item rounded-2xl bg-white border border-slate-200/90 p-6 md:p-7 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-md hover:border-teal-300 transition-all flex flex-col md:flex-row md:items-center justify-between gap-6"
+                        data-dept="marketing">
+                        <div class="space-y-3 flex-1">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-800 border border-blue-200">Truyền
+                                    thông &amp; MKT</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 leading-snug">CTV Truyền thông &amp; Quản lý
+                                Cộng đồng Y khoa</h3>
+                            <div class="flex flex-wrap items-center gap-y-2 gap-x-5 text-sm text-slate-600">
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">public</span> Toàn
+                                    quốc / Remote 100%</span>
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">schedule</span> Bán
+                                    thời gian</span>
+                                <span class="inline-flex items-center gap-1.5 font-bold text-teal-700"><span
+                                        class="material-symbols-outlined text-base text-teal-700">payments</span>
+                                    3.500.000 - 6.000.000 đ + Thưởng KPI</span>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Sinh
+                                    viên Y Dược</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Quản
+                                    trị Fanpage / Group</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Sáng
+                                    tạo nội dung Y học</span>
+                            </div>
+                        </div>
+                        <div class="shrink-0">
+                            <button
+                                class="w-full md:w-auto px-6 py-3 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-sm transition-all inline-flex items-center justify-center gap-2"
+                                onclick="selectRole('community', 'CTV Truyền thông &amp; Quản lý Cộng đồng Y khoa')"
+                                type="button">
+                                <span>Ứng tuyển ngay</span>
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- ITEM 7: Chuyên viên Tư vấn Tuyển sinh -->
+                    <div class="job-item rounded-2xl bg-white border border-slate-200/90 p-6 md:p-7 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-md hover:border-teal-300 transition-all flex flex-col md:flex-row md:items-center justify-between gap-6"
+                        data-dept="sales">
+                        <div class="space-y-3 flex-1">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">Tư
+                                    vấn &amp; CSKH</span>
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200 flex items-center gap-1">⭐
+                                    Ưu tiên tuyển</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 leading-snug">Chuyên viên Tư vấn Tuyển sinh
+                                (EdTech Sales)</h3>
+                            <div class="flex flex-wrap items-center gap-y-2 gap-x-5 text-sm text-slate-600">
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">location_on</span> Hà
+                                    Nội &amp; TP.HCM</span>
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">schedule</span> Toàn
+                                    thời gian</span>
+                                <span class="inline-flex items-center gap-1.5 font-bold text-teal-700"><span
+                                        class="material-symbols-outlined text-base text-teal-700">payments</span> Lương
+                                    cứng + Hoa hồng cao</span>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Tư
+                                    vấn 1:1</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Gói
+                                    ngân hàng đề thi</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Lộ
+                                    trình ôn thi 2027</span>
+                            </div>
+                        </div>
+                        <div class="shrink-0">
+                            <button
+                                class="w-full md:w-auto px-6 py-3 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-sm transition-all inline-flex items-center justify-center gap-2"
+                                onclick="selectRole('sales_edu', 'Chuyên viên Tư vấn Tuyển sinh (EdTech Sales)')"
+                                type="button">
+                                <span>Ứng tuyển ngay</span>
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- ITEM 8: Nhân viên CSKH & Hỗ trợ Học viên -->
+                    <div class="job-item rounded-2xl bg-white border border-slate-200/90 p-6 md:p-7 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-md hover:border-teal-300 transition-all flex flex-col md:flex-row md:items-center justify-between gap-6"
+                        data-dept="sales">
+                        <div class="space-y-3 flex-1">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">Tư
+                                    vấn &amp; CSKH</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 leading-snug">Nhân viên CSKH &amp; Hỗ trợ Học
+                                viên</h3>
+                            <div class="flex flex-wrap items-center gap-y-2 gap-x-5 text-sm text-slate-600">
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">location_on</span> Hà
+                                    Nội / Hybrid</span>
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">schedule</span> Toàn
+                                    thời gian</span>
+                                <span class="inline-flex items-center gap-1.5 font-bold text-teal-700"><span
+                                        class="material-symbols-outlined text-base text-teal-700">payments</span>
+                                    8.000.000 - 12.000.000 đ</span>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Hỗ
+                                    trợ kỹ thuật app</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Chăm
+                                    sóc học viên</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Giao
+                                    tiếp tận tâm</span>
+                            </div>
+                        </div>
+                        <div class="shrink-0">
+                            <button
+                                class="w-full md:w-auto px-6 py-3 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-sm transition-all inline-flex items-center justify-center gap-2"
+                                onclick="selectRole('support', 'Nhân viên CSKH &amp; Hỗ trợ Học viên')" type="button">
+                                <span>Ứng tuyển ngay</span>
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- ITEM 9: Đại sứ Sinh viên / CTV Mạng lưới Trường Y -->
+                    <div class="job-item rounded-2xl bg-white border border-slate-200/90 p-6 md:p-7 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-md hover:border-teal-300 transition-all flex flex-col md:flex-row md:items-center justify-between gap-6"
+                        data-dept="sales">
+                        <div class="space-y-3 flex-1">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span
+                                    class="px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">Tư
+                                    vấn &amp; CSKH</span>
+                                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-teal-100 text-teal-900">⭐ Vị
+                                    trí mới</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 leading-snug">Đại sứ Sinh viên / CTV Mạng lưới
+                                Trường Y</h3>
+                            <div class="flex flex-wrap items-center gap-y-2 gap-x-5 text-sm text-slate-600">
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">public</span> Toàn
+                                    quốc (Y Hà Nội, Y Dược HCM, Huế...)</span>
+                                <span class="inline-flex items-center gap-1.5"><span
+                                        class="material-symbols-outlined text-base text-slate-400">schedule</span> Bán
+                                    thời gian linh hoạt</span>
+                                <span class="inline-flex items-center gap-1.5 font-bold text-teal-700"><span
+                                        class="material-symbols-outlined text-base text-teal-700">payments</span> Hoa
+                                    hồng cao + Chứng nhận Founder</span>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Sinh
+                                    viên Y Dược năm 2-6</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Mạng
+                                    lưới ĐHYD</span>
+                                <span
+                                    class="px-2.5 py-0.5 rounded-md text-xs bg-slate-100 text-slate-600 font-medium">Lan
+                                    tỏa tài liệu</span>
+                            </div>
+                        </div>
+                        <div class="shrink-0">
+                            <button
+                                class="w-full md:w-auto px-6 py-3 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-sm transition-all inline-flex items-center justify-center gap-2"
+                                onclick="selectRole('ambassador', 'Đại sứ Sinh viên / CTV Mạng lưới Trường Y')"
+                                type="button">
+                                <span>Ứng tuyển ngay</span>
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- QUY TRÌNH 4 BƯỚC (TIÊU ĐỀ + THỜI GIAN PHẢN HỒI) -->
+        <section class="py-14 bg-white border-y border-outline-subtle" id="process">
+            <div class="max-w-[1360px] mx-auto px-6">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <div
+                        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-teal-50 text-teal-800 text-xs font-bold uppercase tracking-wider mb-2">
+                        Minh bạch &amp; Tốc độ
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                        Quy trình tuyển dụng 4 bước
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="p-5 rounded-2xl bg-surface border border-slate-200/80 shadow-sm">
+                        <div class="flex items-center justify-between mb-3">
+                            <span
+                                class="w-7 h-7 rounded-lg bg-teal-700 text-white font-mono font-bold text-xs flex items-center justify-center">01</span>
+                            <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded">Trong
+                                48h</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Nộp hồ sơ</h3>
+                        <p class="text-xs text-slate-500">Phản hồi kết quả hồ sơ trong 48 giờ làm việc (đạt hoặc chưa
+                            đạt).</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-surface border border-slate-200/80 shadow-sm">
+                        <div class="flex items-center justify-between mb-3">
+                            <span
+                                class="w-7 h-7 rounded-lg bg-teal-700 text-white font-mono font-bold text-xs flex items-center justify-center">02</span>
+                            <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded">Trong
+                                48h</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Bài test thực hành</h3>
+                        <p class="text-xs text-slate-500">Bài test ngắn sát thực tế vị trí: ca lâm sàng mẫu hoặc case tư
+                            vấn.</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-surface border border-slate-200/80 shadow-sm">
+                        <div class="flex items-center justify-between mb-3">
+                            <span
+                                class="w-7 h-7 rounded-lg bg-teal-700 text-white font-mono font-bold text-xs flex items-center justify-center">03</span>
+                            <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded">30–45
+                                phút</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Phỏng vấn trực tiếp</h3>
+                        <p class="text-xs text-slate-500">Trao đổi cởi mở cùng Bác sĩ sáng lập về định hướng và đãi ngộ.
+                        </p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-surface border border-slate-200/80 shadow-sm">
+                        <div class="flex items-center justify-between mb-3">
+                            <span
+                                class="w-7 h-7 rounded-lg bg-teal-700 text-white font-mono font-bold text-xs flex items-center justify-center">04</span>
+                            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Bắt đầu
+                                ngay</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-sm mb-1">Nhận việc &amp; Onboarding</h3>
+                        <p class="text-xs text-slate-500">Lộ trình định hướng 1:1, nắm chuẩn QĐ 22 và công cụ startup.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FORM ỨNG TUYỂN TINH GỌN (CLEAN & AUTO-FILL) -->
+        <section class="py-16 bg-surface" id="apply-form">
+            <div class="max-w-2xl mx-auto px-6">
+                <div class="rounded-3xl bg-white p-7 sm:p-9 shadow-md border border-slate-200/90">
+                    <div class="text-center mb-6">
+                        <div
+                            class="inline-flex items-center gap-1 px-3 py-1 rounded-md bg-teal-50 text-teal-800 text-xs font-bold uppercase tracking-wider mb-2">
+                            Hồ sơ Ứng tuyển
+                        </div>
+                        <h2 class="text-2xl font-extrabold text-slate-900 tracking-tight">
+                            Đồng hành cùng UpToPi
+                        </h2>
+                        <p class="text-xs text-slate-500 mt-1">
+                            Phản hồi chính thức qua email trong vòng 48 giờ làm việc.
+                        </p>
+                    </div>
+                    <form action="../backend/index.php" class="space-y-4" enctype="multipart/form-data"
+                        id="recruitment-form" method="post" onsubmit="handleFormSubmit(event)">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5"
+                                for="fullname">Họ và tên *</label>
+                            <input
+                                class="w-full h-11 px-3.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-700 transition-all"
+                                id="fullname" name="fullname" placeholder="BS. / ThS. / Nguyễn Văn A" required=""
+                                type="text" />
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5"
+                                    for="email">Email *</label>
+                                <input
+                                    class="w-full h-11 px-3.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-700 transition-all"
+                                    id="email" name="email" placeholder="email@domain.com" required="" type="email" />
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5"
+                                    for="phone">Số điện thoại *</label>
+                                <input
+                                    class="w-full h-11 px-3.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-700 transition-all"
+                                    id="phone" name="phone" placeholder="0988xxxxxx" required="" type="tel" />
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5"
+                                for="position-select">Vị trí ứng tuyển *</label>
+                            <select
+                                class="w-full h-11 px-3.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-700 transition-all"
+                                id="position-select" name="position" required="">
+                                <option disabled="" selected="" value="">-- Chọn vị trí ứng tuyển --</option>
+                                <optgroup label="Khối Nội dung Y khoa">
+                                    <option value="Cố vấn Chuyên môn Y khoa (Medical Board Advisor)">1. Cố vấn Chuyên
+                                        môn Y khoa (Medical Board Advisor)</option>
+                                    <option value="Giảng viên / Bác sĩ Giảng dạy Ca Lâm sàng">2. Giảng viên / Bác sĩ
+                                        Giảng dạy Ca Lâm sàng</option>
+                                    <option value="Biên tập viên Nội dung Y khoa &amp; Ngân hàng Câu hỏi">3. Biên tập
+                                        viên Nội dung Y khoa &amp; Ngân hàng Câu hỏi</option>
+                                    <option value="CTV Biên dịch &amp; Thuật ngữ Y khoa (AMBOSS/USMLE)">4. CTV Biên dịch
+                                        &amp; Thuật ngữ Y khoa (AMBOSS/USMLE)</option>
+                                </optgroup>
+                                <optgroup label="Khối Truyền thông &amp; MKT">
+                                    <option value="Chuyên viên Marketing &amp; Tăng trưởng (Growth Ops)">5. Chuyên viên
+                                        Marketing &amp; Tăng trưởng (Growth Ops)</option>
+                                    <option value="CTV Truyền thông &amp; Quản lý Cộng đồng Y khoa">6. CTV Truyền thông
+                                        &amp; Quản lý Cộng đồng Y khoa</option>
+                                </optgroup>
+                                <optgroup label="Khối Tư vấn &amp; CSKH">
+                                    <option value="Chuyên viên Tư vấn Tuyển sinh (EdTech Sales)">7. Chuyên viên Tư vấn
+                                        Tuyển sinh (EdTech Sales)</option>
+                                    <option value="Nhân viên CSKH &amp; Hỗ trợ Học viên">8. Nhân viên CSKH &amp; Hỗ trợ
+                                        Học viên</option>
+                                    <option value="Đại sứ Sinh viên / CTV Mạng lưới Trường Y">9. Đại sứ Sinh viên / CTV
+                                        Mạng lưới Trường Y</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5"
+                                for="cv_file">CV / Hồ sơ năng lực *</label>
+                            <input
+                                accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                                class="block w-full rounded-xl border border-slate-200 bg-slate-50 text-sm text-slate-600 file:mr-3 file:border-0 file:bg-teal-50 file:px-3.5 file:py-3 file:font-semibold file:text-teal-800 hover:file:bg-teal-100 focus:outline-none focus:ring-2 focus:ring-teal-700"
+                                id="cv_file" name="cv_file" required="" type="file" />
+                            <p class="mt-1 text-[11px] text-slate-400">Định dạng PDF, DOC hoặc DOCX; tối đa 10 MB.</p>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5"
+                                for="why_uptopi">Điều gì thôi thúc bạn muốn tham gia? *</label>
+                            <textarea
+                                class="w-full p-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-700 transition-all resize-none"
+                                id="why_uptopi" name="why_uptopi"
+                                placeholder="Chia sẻ ngắn 1–2 câu về lý do bạn muốn đồng hành..." required=""
+                                rows="2"></textarea>
+                        </div>
+                        <div class="flex items-center gap-2 pt-1">
+                            <input class="rounded text-teal-700 focus:ring-teal-700" id="consent" name="consent"
+                                required="" type="checkbox" />
+                            <label class="text-xs text-slate-500 cursor-pointer" for="consent">
+                                Đồng ý để UpToPi liên hệ phục vụ mục đích phỏng vấn.
+                            </label>
+                        </div>
+                        <button
+                            class="w-full h-11 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm shadow-sm transition-all flex items-center justify-center gap-2 mt-2"
+                            id="submit-application" type="submit">
+                            <span class="material-symbols-outlined text-lg">send</span>
+                            <span id="submit-application-text">Gửi hồ sơ ứng tuyển</span>
+                        </button>
+                        <p class="text-center text-xs text-slate-400 pt-1">
+                            Hoặc gửi file trực tiếp qua <a class="text-teal-700 underline font-semibold"
+                                href="mailto:tuyendung@uptopi.vn">tuyendung@uptopi.vn</a>
+                        </p>
+                    </form>
+                    <div aria-live="polite"
+                        class="hidden mt-4 p-3.5 rounded-xl text-white text-xs font-medium items-center gap-2.5"
+                        id="form-toast" role="status">
+                        <span class="material-symbols-outlined text-base" id="form-toast-icon">check_circle</span>
+                        <span id="form-toast-message"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ SÚC TÍCH (CÂU TRẢ LỜI NGẮN GỌN 2-3 DÒNG GẠCH ĐẦU DÒNG) -->
+        <section class="py-14 bg-white border-t border-outline-subtle" id="faq">
+            <div class="max-w-3xl mx-auto px-6">
+                <div class="text-center max-w-xl mx-auto mb-8">
+                    <div
+                        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-teal-50 text-teal-800 text-xs font-bold uppercase tracking-wider mb-2">
+                        Giải đáp thắc mắc
+                    </div>
+                    <h2 class="text-2xl font-extrabold text-slate-900 tracking-tight">
+                        Câu hỏi thường gặp (FAQ)
+                    </h2>
+                </div>
+                <div class="space-y-3 text-sm">
+                    <!-- FAQ 1 -->
+                    <div class="p-4 rounded-xl border border-slate-200/90 bg-slate-50/50">
+                        <h3 class="font-bold text-slate-900 flex items-center gap-2 mb-1.5">
+                            <span class="material-symbols-outlined text-teal-700 text-lg">help</span>
+                            Bác sĩ / Giảng viên có thể tham gia Cố vấn bán thời gian không?
+                        </h3>
+                        <ul class="text-xs text-slate-600 pl-6 space-y-1 list-disc list-outside">
+                            <li>Hoàn toàn được. Lịch làm việc linh hoạt ngoài giờ trực và cuối tuần.</li>
+                            <li>Chủ động nhận duyệt case lâm sàng hoặc quay video bài giảng online.</li>
+                        </ul>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="p-4 rounded-xl border border-slate-200/90 bg-slate-50/50">
+                        <h3 class="font-bold text-slate-900 flex items-center gap-2 mb-1.5">
+                            <span class="material-symbols-outlined text-teal-700 text-lg">help</span>
+                            Hình thức làm việc của CTV Dịch thuật &amp; Đại sứ sinh viên?
+                        </h3>
+                        <ul class="text-xs text-slate-600 pl-6 space-y-1 list-disc list-outside">
+                            <li>100% Remote linh hoạt từ bất kỳ tỉnh thành nào trên cả nước.</li>
+                            <li>Quản lý tiến độ minh bạch qua Notion, Slack và giao nhận task theo tuần.</li>
+                        </ul>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="p-4 rounded-xl border border-slate-200/90 bg-slate-50/50">
+                        <h3 class="font-bold text-slate-900 flex items-center gap-2 mb-1.5">
+                            <span class="material-symbols-outlined text-teal-700 text-lg">help</span>
+                            Chưa có nhiều kiến thức y khoa có ứng tuyển khối Sale &amp; CSKH được không?
+                        </h3>
+                        <ul class="text-xs text-slate-600 pl-6 space-y-1 list-disc list-outside">
+                            <li>Được đào tạo 1:1 bởi Founder về bối cảnh Quyết định 22 và tâm lý sinh viên y.</li>
+                            <li>Yêu cầu quan trọng nhất: kỹ năng lắng nghe, tư vấn chân thành và chuẩn mực.</li>
+                        </ul>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div class="p-4 rounded-xl border border-slate-200/90 bg-slate-50/50">
+                        <h3 class="font-bold text-slate-900 flex items-center gap-2 mb-1.5">
+                            <span class="material-symbols-outlined text-teal-700 text-lg">help</span>
+                            Chế độ đãi ngộ và lộ trình ESOP như thế nào?
+                        </h3>
+                        <ul class="text-xs text-slate-600 pl-6 space-y-1 list-disc list-outside">
+                            <li>Lương cạnh tranh + thưởng KPI theo hiệu quả thực tế của từng bộ phận.</li>
+                            <li>Nhân sự nòng cốt gắn bó sẽ được xét phân bổ cổ phần thưởng (ESOP) theo mốc phát triển.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800">
+        <div class="max-w-[1360px] mx-auto px-6">
+            <div
+                class="flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-slate-800 text-xs">
+                <div class="flex items-center gap-3">
+                    <img alt="UpToPi Logo Footer" class="h-7 w-auto object-contain brightness-0 invert"
+                        src="https://lh3.googleusercontent.com/aida/AEtjO1VUImOGQnI09qz8EODf0emdT_ToqFwWMKDZBNUFzQRuFsaFEwTRBafrji4Dv3fBsb5C1R2WRhiVZi9DlBalapTFvlLco52JEF5k1ngEe8FmJeaginarN9WdLTrF3DrNzmf1O9f7d330uOfSnp1dQBCzrIduIkNGVr6z8MY-BlDK2_zDmpL1Em7dHJhTuDbWkJ7IhxFQfVurqh6nXaIyGtiT7h3dn55fyn7rIZ4a6bNAniHijnO-nhg7-4BQ" />
+                    <span class="text-slate-300 font-bold">UpToPi Medical EdTech</span>
+                </div>
+                <div class="flex flex-wrap items-center gap-6">
+                    <span>📧 tuyendung@uptopi.vn</span>
+                    <span>📍 Hà Nội &amp; TP. Hồ Chí Minh</span>
+                    <span>🎯 Dự án hướng tới Kỳ thi Quốc gia 2027</span>
+                </div>
+            </div>
+            <div
+                class="pt-6 text-center md:text-left flex flex-col md:flex-row items-center justify-between text-[11px] text-slate-500">
+                <p>© 2024 UpToPi Medical EdTech Vietnam. Bản quyền thuộc về đội ngũ sáng lập UpToPi.</p>
+                <p class="mt-2 md:mt-0">Tuân thủ tiêu chuẩn bảo vệ dữ liệu cá nhân Nghị định 13/2023/NĐ-CP.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPT LỌC & AUTO-FILL NHẸ NHÀNG -->
+    <script>
+        function filterJobs(category, tabBtn) {
+            const tabs = document.querySelectorAll('.category-tab');
+            tabs.forEach(t => {
+                t.classList.remove('bg-teal-700', 'text-white', 'shadow-sm', 'active');
+                t.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+            });
+            if (tabBtn) {
+                tabBtn.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+                tabBtn.classList.add('bg-teal-700', 'text-white', 'shadow-sm', 'active');
+            }
+
+            const items = document.querySelectorAll('.job-item');
+            items.forEach(item => {
+                const dept = item.getAttribute('data-dept');
+                if (category === 'all' || dept === category) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function selectRole(roleKey, roleTitle) {
+            const formSection = document.getElementById('apply-form');
+            if (formSection) {
+                formSection.scrollIntoView({ behavior: 'smooth' });
+            }
+            const selectElem = document.getElementById('position-select');
+            if (selectElem) {
+                for (let i = 0; i < selectElem.options.length; i++) {
+                    if (selectElem.options[i].value.includes(roleTitle) || selectElem.options[i].text.includes(roleTitle)) {
+                        selectElem.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = event.currentTarget;
+            const submitButton = document.getElementById('submit-application');
+            const submitText = document.getElementById('submit-application-text');
+            const toast = document.getElementById('form-toast');
+            const toastIcon = document.getElementById('form-toast-icon');
+            const toastMessage = document.getElementById('form-toast-message');
+
+            submitButton.disabled = true;
+            submitButton.classList.add('opacity-60', 'cursor-not-allowed');
+            submitText.textContent = 'Đang gửi hồ sơ...';
+            toast.classList.add('hidden');
+            toast.classList.remove('flex');
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                });
+                const result = await response.json().catch(() => ({
+                    success: false,
+                    message: 'Máy chủ trả về phản hồi không hợp lệ.'
+                }));
+
+                if (!response.ok || !result.success) {
+                    throw new Error(result.message || 'Không thể gửi hồ sơ. Vui lòng thử lại.');
+                }
+
+                toast.classList.remove('bg-red-600');
+                toast.classList.add('bg-teal-700');
+                toastIcon.textContent = 'check_circle';
+                toastMessage.textContent = result.message;
+                form.reset();
+            } catch (error) {
+                toast.classList.remove('bg-teal-700');
+                toast.classList.add('bg-red-600');
+                toastIcon.textContent = 'error';
+                toastMessage.textContent = error.message || 'Không thể gửi hồ sơ. Vui lòng thử lại.';
+            } finally {
+                toast.classList.remove('hidden');
+                toast.classList.add('flex');
+                toast.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                submitButton.disabled = false;
+                submitButton.classList.remove('opacity-60', 'cursor-not-allowed');
+                submitText.textContent = 'Gửi hồ sơ ứng tuyển';
+            }
+        }
+    </script>
+</body>
+
+</html>
